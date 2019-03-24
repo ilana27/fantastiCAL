@@ -1,0 +1,88 @@
+<html>
+  <head>
+    
+<h1>fantastiCAL</h1>
+<h3> Improve your productivity and overall health!</h3>
+    
+</head>
+  
+ <body>
+<!-- make and fill sections -->
+<div class="row">
+  <div class="column">
+    <!-- to-do list section -->
+    <div class="card">
+    <strong class="todo">To-do list</strong>
+      <p class="activities">You can do it!</p>
+      <div id="myDIV" class="header">
+        <!-- add tasks -->
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+      <!-- default tasks -->
+     <ul id="myUL">
+      <li>Do the dishes</li>
+       <li>Math homework</li>
+    </ul>
+    </div>
+  </div>
+  <!-- points section -->
+  <div class="column">
+    <div class="card">
+      <strong class="goal">Complete your daily goals to earn points!</strong><br>
+<p class="activities">What activities have you done and for how many hours?</p>
+   <!-- drop-down options -->
+<select id="option">
+  <option value="homework">homework</option>
+  <option value="chores">chores</option>
+  <option value="extra-curricular">extra-curricular</option>
+  <option value="personal health">personal health</option>
+  <option value="fitness">fitness</option>
+  <option value="pleasure activities">pleasure activities</option>
+</select>
+
+   <!-- add points -->
+  <form id="calc">
+<input id="input" name="x" type="number" value="0" />
+    <span onclick="updateOutput()" class="addBtn">Add</span> <br>
+    <div class="equals"> Points: </div>
+    <output class="equals" name="z" for="x">0</output>
+</form>
+    </div>
+  </div>
+  
+  <!-- upcoming reminders section -->
+  <div class="column">
+    <div class="card">
+         <strong class="todo">Upcoming reminders</strong>
+      <p class="activities">Coming soon in a life near you</p>
+      <div id="myDIV" class="header">
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+     <ul id="myUL">
+      <li>Birthday dinner</li>
+       <li>Dentist appointment</li>
+    </ul>
+    </div>
+  </div>
+  
+  <!-- keep in mind section -->
+  <div class="column">
+    <div class="card">         
+      <strong class="todo">Keep in mind...</strong>
+      <p class="activities">Daily don't forgets</p>
+      <div id="myDIV" class="header">
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+     <ul id="myUL">
+      <li>Make bed!</li>
+       <li>Exercise</li>
+    </ul></div>
+  </div>
+</div>
+ 
+ </body>
+</html>
+
